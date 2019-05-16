@@ -1,0 +1,35 @@
+<html>
+<head>
+       <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.tabledit.js"></script>
+    <script src="jquery.tabledit.min.js"></script>
+
+</head>
+<script>
+$('#example3').Tabledit({
+    url: 'example.php',
+    editButton: false,
+    deleteButton: false,
+    hideIdentifier: true,
+    columns: {
+        identifier: [0, 'id'],
+        editable: [[2, 'firstname'], [3, 'lastname']]
+    }
+});
+</script>
+<body>
+  <Table id="example3">
+        <tr>
+
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>Test</th>
+        </tr>
+        <tr>
+        <td>Test45</td>
+         <td>tetwt</td>
+          <td>rtyr45646</td>
+        <tr>  
+  </Table>     
+</body>
+</html>
